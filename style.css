@@ -1,0 +1,362 @@
+:root {
+  --section-baclkground-color: orange;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+.wrapper {
+  min-height: 100%;
+  background-color: whitesmoke;
+}
+header {
+  background-color: orange;
+  position: sticky;
+  top: 0;
+}
+header .myname {
+  align-items: center;
+  gap: 1rem;
+}
+header ul {
+  list-style: none;
+  text-decoration: none;
+  gap: 1rem;
+}
+header ul li > a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+}
+header .container {
+  padding: 1rem 4rem;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+header .myname .line {
+  height: 10vh;
+  width: 2px;
+  background: black;
+}
+#darkbackground {
+  position: fixed;
+  top: 20vh;
+  left: 20px;
+  /* display: none; */
+}
+.labelfordark {
+  /* display: none; */
+  position: fixed;
+  top: 30vh;
+  left: 20px;
+}
+#darkbackground:checked .wrapper {
+  background-color: rgb(85, 82, 82);
+}
+/* hero styling */
+.hero {
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  margin: 20vh 0 0 0;
+}
+.hero .herocontainer {
+  width: 90vw;
+  background-color: var(--section-baclkground-color);
+  height: 40vh;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 3rem;
+}
+.hero .herocontainer .intro {
+  justify-content: center;
+  flex-direction: column;
+}
+.hero .herocontainer .photo {
+  width: 50vh;
+  margin-top: -85px;
+}
+.hero .herocontainer img {
+  width: 100%;
+}
+.hero .intro span {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+.hero .intro button {
+  padding: 0.5rem 0;
+  border-radius: 1rem;
+  background-color: black;
+  color: wheat;
+  justify-content: center;
+  gap: 0.5rem;
+}
+/* banner style */
+.banner {
+  padding-top: 20vh;
+  width: 100%;
+  justify-content: center;
+}
+.banner .bannercontainer {
+  grid-template-areas: "graduate divider1 work divider2 experience";
+  width: 80vw;
+  border: solid 1px;
+  padding: 2rem 2rem;
+  justify-content: space-between;
+  border-radius: 5rem;
+}
+.banner .icon {
+  background: var(--section-baclkground-color);
+  border-radius: 50%;
+  padding: 1rem;
+}
+.graduate {
+  grid-area: graduate;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.work {
+  grid-area: work;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.experience {
+  grid-area: experience;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.divider1 {
+  width: 1px;
+  height: 100%;
+  background: black;
+  grid-area: divider1;
+}
+.divider2 {
+  width: 1px;
+  height: 100%;
+  background: black;
+  grid-area: divider2;
+}
+/* skills style */
+.skills {
+  padding-top: 4rem;
+  margin-top: 4rem;
+  justify-content: center;
+}
+.skills .skillscontainer {
+  justify-content: space-around;
+  align-items: center;
+  width: 90vw;
+  flex-wrap: wrap;
+}
+.skillscontainer div i {
+  font-size: 6rem;
+  color: rgb(66, 62, 62);
+}
+/* project style */
+.recentprojects {
+  padding-top: 5rem;
+}
+.recentprojects h2 {
+  text-align: center;
+}
+.projectscontainer {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+.recentprojects .project {
+  flex-direction: column;
+  width: 30vw;
+  box-shadow: 0 0 10px;
+  padding-bottom: 2rem;
+  border-radius: 12px;
+}
+.recentprojects .project .projectphoto {
+  width: 100%;
+}
+.recentprojects .project .projectphoto img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.recentprojects .description {
+  padding: 0 2rem;
+}
+.recentprojects .description > p:nth-child(1) {
+  font-size: 2rem;
+}
+
+/* aboutme style  */
+.aboutme {
+  align-items: center;
+  width: 90vw;
+  margin: auto;
+  padding: 2rem;
+}
+.aboutme .quote {
+  width: 50%;
+}
+.aboutme .quote p:nth-child(1) {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.aboutme .quote p:nth-child(3) {
+  font-weight: bold;
+  padding-bottom: 3rem;
+}
+.aboutme .quote p:nth-child(4) {
+  font-weight: bold;
+}
+.aboutme .myphoto {
+  width: 50%;
+}
+.aboutme .myphoto img {
+  width: 50vh;
+}
+.aboutme .quote .interest {
+  list-style: none;
+  gap: 1rem;
+}
+.aboutme .quote .interest > li {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.aboutme .quote .interest > li:hover {
+  background-color: rgb(167, 161, 161);
+}
+/* socialmedia style  */
+.socialmedia {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.socialmedia p {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.socialmedia .socialmediacontainer div:nth-child(1) i {
+  font-size: 5rem;
+  color: blue;
+}
+.socialmedia .socialmediacontainer div:nth-child(2) i {
+  font-size: 5rem;
+
+  background: linear-gradient(to bottom, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.socialmedia .socialmediacontainer div:nth-child(3) i {
+  font-size: 5rem;
+  color: blue;
+}
+.socialmedia .socialmediacontainer {
+  font-size: 5rem;
+  justify-content: space-around;
+  width: 100%;
+}
+.socialmedia button {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background: rgb(63, 61, 61);
+  color: white;
+}
+.socialmedia button i {
+  padding: 1rem;
+  background: orange;
+  border-radius: 50%;
+}
+/* footer style  */
+footer {
+  padding: 3rem 0;
+  background: black;
+  color: white;
+  margin-top: 6rem;
+}
+footer .linksAll {
+  justify-content: center;
+}
+footer .linksAll li {
+  list-style: none;
+}
+footer .linksAll ul {
+  gap: 1rem;
+  flex-direction: column;
+}
+footer .linksAll li a {
+  text-decoration: none;
+  color: white;
+}
+footer ul > li:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+footer div:nth-child(2) {
+  text-align: center;
+  padding-top: 2rem;
+}
+/* up button */
+.wrapper .upbutton i {
+  padding: 1rem;
+  background: orange;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: 50%;
+}
+/* media query */
+@media (max-width: 600px) {
+  .hero .herocontainer {
+    flex-direction: column-reverse;
+    margin-top: 0;
+    height: auto;
+  }
+  .hero .herocontainer .photo {
+    width: 30vh;
+    margin-top: 1px;
+  }
+  .banner .bannercontainer {
+    grid-template-areas:
+      "graduate"
+      "work"
+      "experience";
+  }
+  .projectscontainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .projectscontainer .project {
+    width: 80vw;
+  }
+  .aboutme {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .aboutme .interest {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .aboutme .myphoto img {
+    width: 50vw;
+  }
+}
