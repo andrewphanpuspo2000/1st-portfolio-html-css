@@ -62,7 +62,6 @@ header .option .optionicon {
   border: solid 1px;
   padding: 0.2rem;
   position: relative;
-  top: -40vh;
 }
 #darkbackground {
   position: fixed;
@@ -372,11 +371,8 @@ footer div:nth-child(2) {
 }
 /* media query */
 @media (max-width: 600px) {
-  header .option .optionicon {
-    top: 0;
-  }
   header ul {
-    top: -30vh;
+    display: none !important;
   }
   .hero .herocontainer {
     flex-direction: column-reverse;
@@ -413,5 +409,16 @@ footer div:nth-child(2) {
   }
   .aboutme .myphoto img {
     width: 50vw;
+  }
+  header .container {
+    padding: 1rem 2rem;
+  }
+  header .container .option {
+    padding-left: 1rem;
+  }
+}
+@media (min-width: 600px) {
+  header .option .optionicon {
+    display: none;
   }
 }
