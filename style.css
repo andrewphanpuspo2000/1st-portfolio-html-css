@@ -92,7 +92,7 @@ header .option .optionicon {
   right: 0;
   height: 100%;
   /* display none */
-  transition: all 1s;
+  /* transition: all 1s; */
 }
 .rigthsidenav ul {
   list-style: none;
