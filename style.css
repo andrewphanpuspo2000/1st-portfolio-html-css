@@ -22,6 +22,9 @@ body {
   background-color: whitesmoke;
   position: relative;
 }
+a {
+  text-decoration: none;
+}
 header {
   background-color: orange;
   position: sticky;
@@ -62,12 +65,16 @@ header .option .optionicon {
   border: solid 1px;
   padding: 0.2rem;
   position: relative;
+  cursor: pointer;
 }
 #darkbackground {
   position: fixed;
-  top: 20vh;
+  top: 40vh;
   left: 20px;
-  display: none;
+  /* display: none; */
+}
+.labelfordark:hover {
+  transform: scale(1.5);
 }
 .labelfordark {
   /* display: none; */
@@ -75,13 +82,28 @@ header .option .optionicon {
   top: 30vh;
   left: 20px;
 }
-#darkbackground:checked .wrapper {
+/* darkmode activated */
+#darkbackground:checked + .wrapper .wrapper {
   background-color: rgb(85, 82, 82);
   min-height: 100vh;
+  color: #fff;
+}
+#darkbackground:checked + .wrapper .wrapper .option a {
+  color: #fff;
+}
+#darkbackground:checked + .wrapper .skills i {
+  color: #fff;
+}
+#darkbackground:checked + .wrapper .wrapper .recentprojects i {
+  color: #fff;
 }
 
 /* .sidenav style  */
-#blocknav:checked .rigthsidenav {
+#blocknav {
+  display: none;
+}
+#blocknav:not(:checked) + .wrapper .rigthsidenav {
+  display: none;
 }
 .rigthsidenav {
   background: whitesmoke;
@@ -91,6 +113,7 @@ header .option .optionicon {
   top: 20vh;
   right: 0;
   height: 100%;
+
   /* display none */
   /* transition: all 1s; */
 }
@@ -211,9 +234,13 @@ header .option .optionicon {
   width: 90vw;
   flex-wrap: wrap;
 }
+.skillscontainer > div {
+  align-items: center;
+  flex-direction: column;
+}
 .skillscontainer div i {
   font-size: 6rem;
-  color: rgb(66, 62, 62);
+  /* color: rgb(66, 62, 62); */
 }
 /* project style */
 .recentprojects {
@@ -233,6 +260,16 @@ header .option .optionicon {
   box-shadow: 0 0 10px;
   padding-bottom: 2rem;
   border-radius: 12px;
+}
+.recentprojects .project .storage {
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+.recentprojects .project .storage i {
+  font-size: 2rem;
+  color: black;
 }
 .recentprojects .project .projectphoto {
   width: 100%;
@@ -419,6 +456,9 @@ footer div:nth-child(2) {
 }
 @media (min-width: 600px) {
   header .option .optionicon {
+    display: none;
+  }
+  .rigthsidenav {
     display: none;
   }
 }

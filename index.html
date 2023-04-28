@@ -27,213 +27,288 @@
   </head>
 
   <body>
-    <input type="checkbox" id="darkbackground" />
-    <label for="darkbackground" class="labelfordark">
-      <i class="fa-solid fa-circle-half-stroke"></i>
-    </label>
     <div class="wrapper">
-      <input type="checkbox" id="blocknav" />
-      <header>
-        <div class="header container flex">
-          <div class="myname flex">
-            <h1>Andrew Phan Puspo</h1>
-            <div class="line"></div>
-            <h3>Soft.Engineer</h3>
-          </div>
-          <div class="option flex">
-            <label class="optionicon" for="blocknav">
-              <i class="fa-solid fa-bars"></i>
-            </label>
-            <ul class="flex">
-              <li><a href="">Home</a></li>
-              <li><a href="">Skills</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">About</a></li>
+      <input type="checkbox" id="darkbackground" />
+      <div class="wrapper">
+        <input type="checkbox" id="blocknav" />
+        <div class="wrapper">
+          <label for="darkbackground" class="labelfordark">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </label>
+
+          <header>
+            <div class="header container flex">
+              <div class="myname flex">
+                <h1>Andrew Phan Puspo</h1>
+                <div class="line"></div>
+                <h3>Soft.Engineer</h3>
+              </div>
+              <div class="option flex">
+                <label class="optionicon" for="blocknav">
+                  <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="flex">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#about">About</a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+
+          <div class="rigthsidenav">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
             </ul>
           </div>
-        </div>
-      </header>
+          <section id="home" class="hero flex">
+            <div class="herocontainer flex">
+              <div class="intro flex">
+                <p>Hi, I am <span>Andrew Phan Puspo</span></p>
+                <h2>Software engineer</h2>
+                <p>I love coding and playing football</p>
+                <button class="flex">
+                  <a href="./assets/resume.pdf" download>
+                    Resume<i class="fa-solid fa-download"></i
+                  ></a>
+                </button>
+              </div>
+              <div class="photo">
+                <img src="./assets/andrewphoto.png" alt="photo1" />
+              </div>
+            </div>
+          </section>
+          <section class="banner flex">
+            <div class="bannercontainer grid">
+              <div class="graduate flex">
+                <div class="icon">
+                  <i class="fa-solid fa-medal"></i>
+                </div>
+                <div class="graduatenote">
+                  <h3>Bachelor of IT</h3>
+                  <p>Graduate</p>
+                </div>
+              </div>
+              <div class="divider1"></div>
+              <div class="work flex">
+                <div class="icon">
+                  <i class="fa-solid fa-medal"></i>
+                </div>
+                <div class="projectstatus">
+                  <h3>3 projects</h3>
+                  <p>Completed</p>
+                </div>
+              </div>
+              <div class="divider2"></div>
 
-      <div class="rigthsidenav">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">About</a></li>
-        </ul>
+              <div class="experience flex">
+                <div class="icon">
+                  <i class="fa-solid fa-medal"></i>
+                </div>
+                <div class="expnote">
+                  <h3>Experience</h3>
+                  <p>2 years</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="skills flex" id="skills">
+            <div class="skillscontainer flex">
+              <div class="github flex">
+                <div class="icon">
+                  <i class="fa-brands fa-square-github"></i>
+                </div>
+                <p>Github</p>
+              </div>
+              <div class="Figma flex">
+                <div class="icon">
+                  <i class="fa-brands fa-figma"></i>
+                </div>
+                <p>Figma</p>
+              </div>
+              <div class="HTML flex">
+                <div class="icon">
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <p>HTML</p>
+              </div>
+              <div class="CSS flex">
+                <div class="icon">
+                  <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <p>CSS</p>
+              </div>
+              <div class="Javascript flex">
+                <div class="icon">
+                  <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <p>Javascript</p>
+              </div>
+            </div>
+          </section>
+          <section class="recentprojects" id="projects">
+            <h2>Recent Projects</h2>
+            <div class="projectscontainer flex">
+              <div class="project flex">
+                <div class="projectphoto">
+                  <img src="./assets/projectss.png" alt="project1" />
+                </div>
+                <div class="storage flex">
+                  <div class="gitVisit">
+                    <a
+                      href="https://github.com/andrewphanpuspo2000/1st-portfolio-html-css"
+                      target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+
+                <div class="description">
+                  <p>My Profile</p>
+                  <p>12-02-2023</p>
+                </div>
+              </div>
+              <div class="project flex">
+                <div class="projectphoto">
+                  <img src="./assets/portfoliio2.png" alt="project1" />
+                </div>
+                <div class="storage flex">
+                  <div class="gitVisit">
+                    <a
+                      href="https://github.com/andrewphanpuspo2000/parallex"
+                      target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                  <div class="linkVisit flex">
+                    <a
+                      href="https://andrewphanpuspo2000.github.io/parallex/"
+                      target="_blank"
+                      ><i class="fa-solid fa-link"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="description">
+                  <p>Parallex Portfolio</p>
+                  <p>10-11-2022</p>
+                </div>
+              </div>
+              <div class="project flex">
+                <div class="projectphoto">
+                  <img src="./assets/portfolio1.png" alt="project1" />
+                </div>
+                <div class="storage flex">
+                  <div class="gitVisit">
+                    <a
+                      href="https://github.com/andrewphanpuspo2000/ProjectDentedCode"
+                      target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                  <div class="linkVisit flex">
+                    <a
+                      href="https://andrewphanpuspo2000.github.io/ProjectDentedCode/"
+                      target="_blank"
+                      ><i class="fa-solid fa-link"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="description">
+                  <p>HTML-CSS Portfolio</p>
+                  <p>09-09-2022</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="aboutme flex" id="about">
+            <div class="myphoto">
+              <img src="assets/andrewphoto.png" alt="myphoto" />
+            </div>
+            <div class="quote">
+              <p>Andrew Phan Puspo</p>
+              <p>
+                I am a fresh-graduate in Information Techonlogy. Highly
+                passionate working in IT environment. Passionate in developing
+                web development using up to date technology. Learning new
+                knowledge, adapting to new environment and collaborating in
+                workplace are my main soft skills that I am condifence with.
+                Skill in several programming languages used in web developement.
+              </p>
+              <p>Sydney , Australia</p>
+              <p>Interest</p>
+              <ul class="interest flex">
+                <li>Coding</li>
+                <li>Football</li>
+                <li>Basketball</li>
+              </ul>
+            </div>
+          </section>
+          <section class="socialmedia flex" id="contact">
+            <p>Get in Touch</p>
+            <div class="socialmediacontainer flex">
+              <div>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100091348956100"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/app11112000/"
+                  ><i class="fa-brands fa-square-instagram"></i
+                ></a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/in/andrew-phan-puspo/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+            <p>Or</p>
+            <a href="mailto:andrewphanpuspo2000@gmail.com"
+              ><button>
+                andrewphanpuspo2000@gmail.com
+                <i class="fa-solid fa-paper-plane"></i></button
+            ></a>
+          </section>
+
+          <footer>
+            <div class="linksAll flex">
+              <ul class="flex">
+                <li>Links</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+              <ul class="flex">
+                <li>Social Media</li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100091348956100"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/app11112000/">Instagram</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/andrew-phan-puspo/"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>&copy;copyright all reserved 😁</div>
+          </footer>
+          <a href="#home"
+            ><div class="upbutton"><i class="fa-solid fa-arrow-up"></i></div
+          ></a>
+        </div>
       </div>
-      <section class="hero flex">
-        <div class="herocontainer flex">
-          <div class="intro flex">
-            <p>Hi, I am <span>Andrew Phan Puspo</span></p>
-            <h2>Software engineer</h2>
-            <p>I love coding and playing football</p>
-            <button class="flex">
-              Resume<i class="fa-solid fa-download"></i>
-            </button>
-          </div>
-          <div class="photo">
-            <img src="./assets/andrewphoto.png" alt="photo1" />
-          </div>
-        </div>
-      </section>
-      <section class="banner flex">
-        <div class="bannercontainer grid">
-          <div class="graduate flex">
-            <div class="icon">
-              <i class="fa-solid fa-medal"></i>
-            </div>
-            <div class="graduatenote">
-              <h3>IT</h3>
-              <p>Graduate</p>
-            </div>
-          </div>
-          <div class="divider1"></div>
-          <div class="work flex">
-            <div class="icon">
-              <i class="fa-solid fa-medal"></i>
-            </div>
-            <div class="projectstatus">
-              <h3>2 projects</h3>
-              <p>Completed</p>
-            </div>
-          </div>
-          <div class="divider2"></div>
-
-          <div class="experience flex">
-            <div class="icon">
-              <i class="fa-solid fa-medal"></i>
-            </div>
-            <div class="expnote">
-              <h3>Experience</h3>
-              <p>2 years</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="skills flex">
-        <div class="skillscontainer flex">
-          <div class="github">
-            <div class="icon">
-              <i class="fa-brands fa-square-github"></i>
-            </div>
-            <p>Github</p>
-          </div>
-          <div class="Figma">
-            <div class="icon">
-              <i class="fa-brands fa-figma"></i>
-            </div>
-            <p>Figma</p>
-          </div>
-          <div class="HTML">
-            <div class="icon">
-              <i class="fa-brands fa-html5"></i>
-            </div>
-            <p>HTML</p>
-          </div>
-          <div class="CSS">
-            <div class="icon">
-              <i class="fa-brands fa-css3-alt"></i>
-            </div>
-            <p>CSS</p>
-          </div>
-          <div class="Javascript">
-            <div class="icon">
-              <i class="fa-brands fa-css3-alt"></i>
-            </div>
-            <p>Javascript</p>
-          </div>
-        </div>
-      </section>
-      <section class="recentprojects">
-        <h2>Recet Projects</h2>
-        <div class="projectscontainer flex">
-          <div class="project flex">
-            <div class="projectphoto">
-              <img src="./assets/projectss.png" alt="project1" />
-            </div>
-            <div class="description">
-              <p>Full Stack Development</p>
-              <p>11-12-2020</p>
-            </div>
-          </div>
-          <div class="project flex">
-            <div class="projectphoto">
-              <img src="./assets/projectss.png" alt="project1" />
-            </div>
-            <div class="description">
-              <p>Full Stack Development</p>
-              <p>11-12-2020</p>
-            </div>
-          </div>
-          <div class="project flex">
-            <div class="projectphoto">
-              <img src="./assets/projectss.png" alt="project1" />
-            </div>
-            <div class="description">
-              <p>Full Stack Development</p>
-              <p>11-12-2020</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="aboutme flex">
-        <div class="myphoto">
-          <img src="assets/andrewphoto.png" alt="myphoto" />
-        </div>
-        <div class="quote">
-          <p>Andrew Phan Puspo</p>
-          <p>
-            I am a graduate in Information Techonlogy. Highly passionate working
-            in IT environment. Passionate in developing web development using up
-            to date technology. Learning new knowledge, adapting to new
-            environment and collaborating in workplace are my main soft skills
-            that I am condifence with. Skill in several programming languages
-            used in web developement.
-          </p>
-          <p>Sydney , Australia</p>
-          <p>Interest</p>
-          <ul class="interest flex">
-            <li>Coding</li>
-            <li>Football</li>
-            <li>Basketball</li>
-          </ul>
-        </div>
-      </section>
-      <section class="socialmedia flex">
-        <p>Get in Touch</p>
-        <div class="socialmediacontainer flex">
-          <div><i class="fa-brands fa-square-facebook"></i></div>
-          <div><i class="fa-brands fa-square-instagram"></i></div>
-          <div><i class="fa-brands fa-linkedin"></i></div>
-        </div>
-        <p>Or</p>
-        <a href="mailto:andrewphanpuspo2000@gmail.com"
-          ><button>
-            andrewphanpuspo2000@gmail.com
-            <i class="fa-solid fa-paper-plane"></i></button
-        ></a>
-      </section>
-
-      <footer>
-        <div class="linksAll flex">
-          <ul class="flex">
-            <li>Links</li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-          <ul class="flex">
-            <li>Social Media</li>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">LinkedIn</a></li>
-          </ul>
-        </div>
-        <div>&copy;copyright all reserved 😁</div>
-      </footer>
-      <div class="upbutton"><i class="fa-solid fa-arrow-up"></i></div>
     </div>
   </body>
 </html>
