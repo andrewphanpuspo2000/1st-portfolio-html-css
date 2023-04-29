@@ -453,6 +453,9 @@ footer div:nth-child(2) {
   header .container .option {
     padding-left: 1rem;
   }
+  .rigthsidenav {
+    width: 50vw;
+  }
 }
 @media (min-width: 600px) {
   header .option .optionicon {
