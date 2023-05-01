@@ -357,6 +357,10 @@ header .option .optionicon {
   justify-content: space-around;
   width: 100%;
 }
+.socialmediacontainer > div {
+  position: relative;
+  animation: socialmediaJump 1s linear infinite;
+}
 .socialmedia button {
   padding: 1rem 2rem;
   border-radius: 2rem;
@@ -463,5 +467,14 @@ footer div:nth-child(2) {
   }
   .rigthsidenav {
     display: none;
+  }
+}
+
+@keyframes socialmediaJump {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 1rem;
   }
 }
