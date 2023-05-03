@@ -359,7 +359,7 @@ header .option .optionicon {
 }
 .socialmediacontainer > div {
   position: relative;
-  animation: socialmediaJump 1s linear infinite;
+  animation: socialmediaJump 1s alternate-reverse infinite;
 }
 .socialmedia button {
   padding: 1rem 2rem;
