@@ -11,6 +11,9 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+.margin-top {
+  margin-top: 1rem;
+}
 .grid {
   display: grid;
 }
@@ -113,6 +116,7 @@ header .option .optionicon {
   top: 20vh;
   right: 0;
   height: 100%;
+  z-index: 1;
 
   /* display none */
   /* transition: all 1s; */
@@ -139,11 +143,12 @@ header .option .optionicon {
   justify-content: center;
   align-items: center;
 
-  width: 100vw;
   padding-top: 20vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .hero .herocontainer {
-  width: 90vw;
+  width: 100%;
   background-color: var(--section-baclkground-color);
   height: 40vh;
   justify-content: space-around;
